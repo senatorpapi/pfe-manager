@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  env: DEV
+spring:
+  application:
+    name: book-catalog
+  datasource:
+    password: amine
+    url: jdbc:postgresql://localhost:5432/pfe-manager
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+jwt:
+  secret: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9cAOIAifu3fykvhkHpbuhbvtH807Z2rI1FS3vX1XMjE
